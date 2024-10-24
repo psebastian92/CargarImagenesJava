@@ -1,0 +1,115 @@
+/* Asegurar que el body esté centrado */
+body {
+    background: linear-gradient(to bottom right, #e0f7fa, #ffccbc);
+    margin: 0;
+    min-height: 100vh; /* Asegurar que el contenido no se aleje de la vista */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Estilo del título */
+.titulo {
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Ajustar el contenedor de proyectos */
+.contenedor-carga-proyectos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 80%;
+    margin: 20px auto;
+    gap: 40px;
+}
+
+/* Alinear drop-area y descripción */
+.drop-area {
+    border: 2px dashed #4caf50;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s;
+    margin-bottom: 40px;
+}
+
+.descripcion-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Ajustes de los campos de título y textarea */
+.descripcion-area div {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+textarea, #titulo {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+    font-size: 1.2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s;
+    margin-top: 5px;
+}
+
+/* Estilo del botón "Subir Proyecto" */
+.boton-subir {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.boton-subir:hover {
+    background-color: #1e88e5;
+}
+
+/* Estilo del botón "Regresar" */
+.boton-regresar {
+    background-color: #00ff40;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-regresar:hover {
+    background-color: #008000;
+}
+
+/* Asegurar que el contenedor de los botones esté centrado */
+.contenedor-subir, .contenedor-boton-regresar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+}
